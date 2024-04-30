@@ -1,4 +1,4 @@
-# Terminal configuration
+# dotfiles
 
 ## NVIM 
 
