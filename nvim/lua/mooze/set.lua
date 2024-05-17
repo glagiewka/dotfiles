@@ -13,6 +13,7 @@ vim.opt.undofile = true
 
 vim.opt.smartindent = true
 vim.opt.wrap = false
+vim.opt.list = true
 
 vim.opt.hlsearch = false
 
