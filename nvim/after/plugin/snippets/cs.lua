@@ -55,3 +55,45 @@ ls.add_snippets(fileType, {
         i(4, '')
     }))
 })
+
+ls.add_snippets(fileType, {
+    s('if', fmt([[
+    if ({1} {2} {3}) {{
+        {4}
+    }}
+    ]], {
+        i(1, 'First'),
+        c(2, {
+            t('=='),
+            t('!='),
+            t('is'),
+            t('is not')
+        }),
+        i(3, 'Second'),
+        i(4, '')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('log', fmt([[
+    Console.WriteLine({1});
+    ]], {
+        i(1, 'Message')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('docsum', fmt([[
+    /// <summary>
+    /// {1}
+    /// </summary>
+    ]], {
+        i(1, 'Summary')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('docinh', fmt([[
+    /// <inheritdoc />
+    ]], {}))
+})
