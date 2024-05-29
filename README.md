@@ -22,6 +22,6 @@
 ### Commands
 
 #### Logging run pane to lnav
-- Start piping run pane to file (change pange name) `tmux pipe-pane -o -t'dotnet run' 'cat > ~/log'`
+- Start piping run pane to file (change pane name) `tmux pipe-pane -o -t'dotnet run' 'cat > ~/log'`
 - Run lnav `lnav log`
 - Rerun the first command to stop piping
