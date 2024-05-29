@@ -52,5 +52,5 @@ require("lazy").setup({
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
 
-    { 'mfussenegger/nvim-dap' }
+    'puremourning/vimspector'
 })
