@@ -16,12 +16,20 @@
             "command": "find",
             "keys": "ctrl+shift+f"
         },
-      	{
+        {
             "command": "paste"
         },
         {
             "command": "unbound",
             "keys": "ctrl+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "f11"
+        },
+        {
+            "command": "unbound",
+            "keys": "shift+f11"
         },
         {
             "command": 
@@ -30,6 +38,10 @@
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": "toggleFullscreen",
+            "keys": "ctrl+f11"
         }
     ],
     "copyFormatting": "none",
