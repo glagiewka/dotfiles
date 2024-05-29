@@ -59,4 +59,17 @@ end)
 vim.keymap.set("n", "<F24>", function()
     require('dap').step_out()
 end)
+-- Telescope
+vim.keymap.set('n', '<leader>pf', function()
+    require('telescope.builtin').find_files({})
+end)
+
+vim.keymap.set('n', '<C-p>', function()
+    require('telescope.builtin').git_files({})
+end)
+
+vim.keymap.set('n', '<leader>ps', function()
+    require('telescope.builtin').live_grep({})
+end)
+
 
