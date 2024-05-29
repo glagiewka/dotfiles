@@ -8,9 +8,13 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 local fileType = 'cs'
 
+
+-- Classes
+
 ls.add_snippets(fileType, {
     s('cls', fmt([[
-    public class {1} {{
+    public class {1}
+    {{
         {2}
     }}
     ]],{ i(1, 'ClassName'), i(2, '') } ))
@@ -18,7 +22,8 @@ ls.add_snippets(fileType, {
 
 ls.add_snippets(fileType, {
     s('mth', fmt([[
-    {1} {2} {3}({4}) {{
+    {1} {2} {3}({4})
+    {{
         {5}
     }}
     ]], {
@@ -56,31 +61,47 @@ ls.add_snippets(fileType, {
     }))
 })
 
+
+-- Conditions
+
 ls.add_snippets(fileType, {
     s('if', fmt([[
-    if ({1} {2} {3}) {{
-        {4}
+    if ({1})
+    {{
+        {2}
     }}
     ]], {
-        i(1, 'First'),
-        c(2, {
-            t('=='),
-            t('!='),
-            t('is'),
-            t('is not')
-        }),
-        i(3, 'Second'),
-        i(4, '')
+        i(1, 'Condition'),
+        i(2, '')
     }))
 })
 
 ls.add_snippets(fileType, {
-    s('log', fmt([[
-    Console.WriteLine({1});
+    s('else', fmt([[
+    else
+    {{
+        {1}
+    }}
     ]], {
-        i(1, 'Message')
+        i(1, '')
     }))
 })
+
+
+ls.add_snippets(fileType, {
+    s('elseif', fmt([[
+    else if ({1})
+    {{
+        {2}
+    }}
+    ]], {
+        i(1, 'Condition'),
+        i(2, '')
+    }))
+})
+
+
+-- Documentation
 
 ls.add_snippets(fileType, {
     s('docsum', fmt([[
@@ -96,4 +117,100 @@ ls.add_snippets(fileType, {
     s('docinh', fmt([[
     /// <inheritdoc />
     ]], {}))
+})
+
+
+-- Initializers
+
+ls.add_snippets(fileType, {
+    s('list', fmt([[
+    new List<{1}>(){2}
+    ]], {
+        i(1, 'Type'),
+        i(2, '')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('liste', fmt([[
+    new List<{1}>
+    {{
+        {2}
+    }}{3}
+    ]], {
+        i(1, 'Type'),
+        i(2, 'Element'),
+        i(3, '')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('eempty', fmt([[
+    Enumerable.Empty<{1}>();
+    ]], {
+        i(1, 'Type')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('sempty', fmt([[
+    string.Empty;
+    ]], {}))
+})
+
+
+-- Logging
+
+ls.add_snippets(fileType, {
+    s('log', fmt([[
+    Console.WriteLine({1});
+    ]], {
+        i(1, 'Message')
+    }))
+})
+
+-- Loops
+
+ls.add_snippets(fileType, {
+    s('foreach', fmt([[
+    foreach (var {1} in {2})
+    {{
+        {3}
+    }}
+    ]], {
+        i(1, 'var'),
+        i(2, 'Enumerable'),
+        i(3, '')
+    }))
+})
+
+-- Try/Catch
+
+ls.add_snippets(fileType, {
+    s('try', fmt([[
+    try
+    {{
+        {3}
+    }}
+    catch ({1})
+    {{
+        {2}
+    }}
+    ]], {
+        i(1, 'Exception'),
+        i(2, ''),
+        i(3, '')
+    }))
+})
+
+ls.add_snippets(fileType, {
+    s('catch', fmt([[
+    catch ({1} e)
+    {{
+        {2}
+    }}
+    ]], {
+        i(1, 'Exception'),
+        i(2, ''),
+    }))
 })
