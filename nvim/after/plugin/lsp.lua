@@ -14,8 +14,9 @@ require('mason-lspconfig').setup({
 		'lua_ls',
 		'html',
 		'csharp_ls',
-		'cssls'
-
+		'cssls',
+        'jsonls',
+        'yamlls'
 	},
 	handlers = {
 		function(server_name)
@@ -23,3 +24,4 @@ require('mason-lspconfig').setup({
 		end,
 	},
 })
+
