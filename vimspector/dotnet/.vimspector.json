@@ -1,15 +1,25 @@
 {
-  "configurations": {
-    "launch - netcoredbg": {
-      "adapter": "netcoredbg",
-      "configuration": {
-        "request": "attach",
-        "program": "${workspaceRoot}/bin/Debug/NET 8.0/WebApiTest.dll",
-        "args": [],
-        "stopAtEntry": true,
-        "cwd": "${workspaceRoot}",
-        "env": {"ASPNETCORE_URLS":"https://localhost:15208;http://localhost:15209", "ASPNETCORE_ENVIRONMENT":"Development"}
-      }
+    "configurations": {
+        "attach - netcoredbg": {
+            "adapter": "netcoredbg",
+            "configuration": {
+                "request": "attach",
+                "args": [],
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        "launch - netcoredbg": {
+            "adapter": "netcoredbg",
+            "configuration": {
+                "request": "launch",
+                "program": "${workspaceRoot}/bin/Debug/net8.0/WebApiTest.dll",
+                "args": [],
+                "cwd": "${workspaceRoot}",
+                "env": {
+                    "ASPNETCORE_ENVIRONMENT": "Development",
+                    "ASPNETCORE_URLS": "http://localhost:5012"
+                }
+            }
+        }
     }
-  }
 }
