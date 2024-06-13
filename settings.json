@@ -48,7 +48,7 @@
         [
             {
                 "bellStyle": "none",
-                "colorScheme": "One Half Dark",
+                "colorScheme": "rose-pine",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
@@ -68,5 +68,60 @@
             }
         ]
     },
-    "useAcrylicInTabRow": true
+     "schemes": 
+    [
+        {
+            "name": "rose-pine",
+          
+            "cursorColor": "#555169",
+            "selectionBackground": "#2a2837",
+          
+            "background": "#191724",
+            "foreground": "#e0def4",
+          
+            "black": "#26233a",
+            "blue": "#9ccfd8",
+            "cyan": "#ebbcba",
+            "green": "#31748f",
+            "purple": "#c4a7e7",
+            "red": "#eb6f92",
+            "white": "#e0def4",
+            "yellow": "#f6c177",
+            "brightBlack": "#6e6a86",
+            "brightBlue": "#9ccfd8",
+            "brightCyan": "#ebbcba",
+            "brightGreen": "#31748f",
+            "brightPurple": "#c4a7e7",
+            "brightRed": "#eb6f92",
+            "brightWhite": "#e0def4",
+            "brightYellow": "#f6c177"
+        },
+    ],
+    "theme": "rose-pine",
+    "themes": 
+    [
+        {
+            "name": "rose-pine",
+            "tab": 
+            {
+                "background": "#191724FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#26233AFF",
+                "unfocusedBackground": "#908CAAFF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ]
 }
