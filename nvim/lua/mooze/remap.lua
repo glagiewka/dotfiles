@@ -14,6 +14,10 @@ vim.keymap.set('n', '<leader>ps', function()
     require('telescope.builtin').live_grep({})
 end)
 
+vim.keymap.set('n', 'gr', function()
+    require('telescope.builtin').lsp_references({})
+end)
+
 -- Vimspector
 -- F5
 vim.keymap.set("n", "<F5>", "<Plug>VimspectorContinue")
