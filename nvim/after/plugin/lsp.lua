@@ -16,7 +16,8 @@ require('mason-lspconfig').setup({
 		'csharp_ls',
 		'cssls',
         'jsonls',
-        'yamlls'
+        'yamlls',
+        'lemminx',
 	},
 	handlers = {
 		function(server_name)
