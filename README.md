@@ -9,6 +9,9 @@
 - Download CaskaydiaCove Nerd Font from `https://github.com/ryanoasis/nerd-fonts`
 - Read README.md and install the NF variant
 
+### Config
+- Copy nvim config to `.config/nvim`
+
 ### Debugging
 - Install Vimspector `https://github.com/puremourning/vimspector`
 
