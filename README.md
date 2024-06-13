@@ -1,27 +1,30 @@
 # dotfiles
 
-## NVIM
+## NEOVIM
 
 ### Install
-- Install nvim `https://github.com/neovim/neovim/blob/master/INSTALL.md`
+- Install [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
 ### Fonts
-- Download CaskaydiaCove Nerd Font from `https://github.com/ryanoasis/nerd-fonts`
+- Download CaskaydiaCove Nerd Font [here](https://github.com/ryanoasis/nerd-fonts)
 - Read README.md and install the NF variant
 
 ### Config
 - Copy nvim config to `.config/nvim`
 
 ### Debugging
-- Install Vimspector `https://github.com/puremourning/vimspector`
+- Install [vimspector](https://github.com/puremourning/vimspector)
+
+### Plugin Dependencies
+- [telescope](https://github.com/nvim-telescope/telescope.nvim) requires [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## TMUX
-- Install tmux `https://github.com/tmux/tmux/wiki/Installing`
+- Install [tmux](https://github.com/tmux/tmux/wiki/Installing)
 - Place `tmux.conf` in the home directory
 - Install plugins by pressing `Ctrl+B I`. More info [here](https://github.com/tmux-plugins/tpm).
 
 ## GIT
-- Install Lazygit `https://github.com/jesseduffield/lazygit`
+- Install [lazygit](https://github.com/jesseduffield/lazygit)
 - Setup global .gitignore
     - Place `.gitignore` in the home directory
     - Configure git to use it `git config --global core.excludesfile ~/.gitignore`
