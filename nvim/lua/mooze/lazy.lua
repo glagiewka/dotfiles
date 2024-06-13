@@ -13,20 +13,25 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 
-    -- telescope
+    -- files
     "nvim-lua/plenary.nvim",
     {
         "nvim-telescope/telescope.nvim", tag = "0.1.6",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+    'mbbill/undotree',
 
-    -- theme
+    -- ui 
     {
         "rose-pine/neovim",
         name = "rose-pine"
     },
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 
-    -- lsp-zero
+    -- language support
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
     'neovim/nvim-lspconfig',
     'hrsh7th/cmp-nvim-lsp',
@@ -34,23 +39,18 @@ require("lazy").setup({
     'L3MON4D3/LuaSnip',
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
-
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate"
     },
-    'mbbill/undotree',
 
+    -- snippets
     {
         "L3MON4D3/LuaSnip",
         version = "v2.*",
         build = "make install_jsregexp"
     },
 
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
-    },
-
-    'puremourning/vimspector'
+    -- debugger
+    'puremourning/vimspector',
 })
