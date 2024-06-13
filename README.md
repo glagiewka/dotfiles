@@ -15,6 +15,7 @@
 ## TMUX
 - Install tmux `https://github.com/tmux/tmux/wiki/Installing`
 - Place `tmux.conf` in the home directory
+- Install plugins by pressing `Ctrl+B I`. More info [here](https://github.com/tmux-plugins/tpm).
 
 ## GIT
 - Install Lazygit `https://github.com/jesseduffield/lazygit`
