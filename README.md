@@ -2,6 +2,9 @@
 
 ## NVIM
 
+### Install
+- Install nvim `https://github.com/neovim/neovim/blob/master/INSTALL.md`
+
 ### Fonts
 
 - Download CaskaydiaCove Nerd Font from `https://github.com/ryanoasis/nerd-fonts`
