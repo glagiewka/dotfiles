@@ -8,6 +8,15 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 local fileType = 'cs'
 
+-- Attributes
+
+ls.add_snippets(fileType, {
+    s('attr', fmt([=[
+    [{1}]
+    ]=], {
+        i(1, 'Attribute')
+    }))
+})
 
 -- Classes
 
@@ -17,7 +26,10 @@ ls.add_snippets(fileType, {
     {{
         {2}
     }}
-    ]],{ i(1, 'ClassName'), i(2, '') } ))
+    ]], {
+        i(1, 'ClassName'),
+        i(2, '')
+    }))
 })
 
 ls.add_snippets(fileType, {
@@ -48,8 +60,7 @@ ls.add_snippets(fileType, {
 
 ls.add_snippets(fileType, {
     s('prop', fmt([[
-    {1} {2} {3} {{ get; set; }}
-    {4}
+    {1} {2} {3} {{ get; set; }} {4}
     ]], {
         c(1, {
             t('public'),
@@ -123,6 +134,14 @@ ls.add_snippets(fileType, {
 -- Initializers
 
 ls.add_snippets(fileType, {
+    s('eempty', fmt([[
+    Enumerable.Empty<{1}>();
+    ]], {
+        i(1, 'Type')
+    }))
+})
+
+ls.add_snippets(fileType, {
     s('list', fmt([[
     new List<{1}>(){2}
     ]], {
@@ -145,10 +164,19 @@ ls.add_snippets(fileType, {
 })
 
 ls.add_snippets(fileType, {
-    s('eempty', fmt([[
-    Enumerable.Empty<{1}>();
+    s('new', fmt([[
+    new();
+    ]], {}))
+})
+
+ls.add_snippets(fileType, {
+    s('newe', fmt([[
+    new()
+    {{
+        {1}
+    }}
     ]], {
-        i(1, 'Type')
+        i(1, '')
     }))
 })
 
