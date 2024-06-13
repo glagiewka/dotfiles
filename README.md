@@ -18,6 +18,8 @@
 
 ### Plugin Dependencies
 - [telescope](https://github.com/nvim-telescope/telescope.nvim) requires [ripgrep](https://github.com/BurntSushi/ripgrep)
+- Json language server requires [node](https://github.com/nvm-sh/nvm)
+- C# language server requires [dotnet](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
 
 ## TMUX
 - Install [tmux](https://github.com/tmux/tmux/wiki/Installing)
