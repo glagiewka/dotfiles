@@ -14,6 +14,7 @@
 
 ### Debugging
 - Install [vimspector](https://github.com/puremourning/vimspector)
+- Fix for `Vimspector unavailable: Requires Vim compiled with +python3` [here](https://stackoverflow.com/questions/74036547/neovim-vimspector-unavailable-requires-vim-compiled-with-python3)
 
 ### Plugin Dependencies
 - [telescope](https://github.com/nvim-telescope/telescope.nvim) requires [ripgrep](https://github.com/BurntSushi/ripgrep)
