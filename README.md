@@ -6,17 +6,20 @@
 - Install nvim `https://github.com/neovim/neovim/blob/master/INSTALL.md`
 
 ### Fonts
-
 - Download CaskaydiaCove Nerd Font from `https://github.com/ryanoasis/nerd-fonts`
 - Read README.md and install the NF variant
 
 ### Debugging
 - Install Vimspector `https://github.com/puremourning/vimspector`
 
+## TMUX
+- Install tmux `https://github.com/tmux/tmux/wiki/Installing`
+- Place `tmux.conf` in the home directory
+
 ## GIT
 - Install Lazygit `https://github.com/jesseduffield/lazygit`
 - Setup global .gitignore
-    - Place .gitignore in the home directory
+    - Place `.gitignore` in the home directory
     - Configure git to use it `git config --global core.excludesfile ~/.gitignore`
 
 ## Logging
