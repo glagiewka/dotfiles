@@ -4,13 +4,11 @@
 
 ### Install
 - Install [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- Copy nvim config to `.config/nvim`
 
 ### Fonts
 - Download CaskaydiaCove Nerd Font [here](https://github.com/ryanoasis/nerd-fonts)
 - Read README.md and install the NF variant
-
-### Config
-- Copy nvim config to `.config/nvim`
 
 ### Debugging
 - Install [vimspector](https://github.com/puremourning/vimspector)
@@ -33,7 +31,11 @@
     - Configure git to use it `git config --global core.excludesfile ~/.gitignore`
 
 ## Logging
-- Install lnav `https://lnav.org/`
+- Install [lnav](https://lnav.org/)
+
+## Midnight Commander
+- Install [mc](https://midnight-commander.org/)
+- Copy mc config to `.config/mc`
 
 ## Commands
 
