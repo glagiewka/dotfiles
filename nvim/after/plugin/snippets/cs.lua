@@ -165,7 +165,7 @@ ls.add_snippets(fileType, {
 
 ls.add_snippets(fileType, {
     s('new', fmt([[
-    new();
+    new()
     ]], {}))
 })
 
@@ -182,7 +182,7 @@ ls.add_snippets(fileType, {
 
 ls.add_snippets(fileType, {
     s('sempty', fmt([[
-    string.Empty;
+    string.Empty
     ]], {}))
 })
 
@@ -220,7 +220,7 @@ ls.add_snippets(fileType, {
     {{
         {3}
     }}
-    catch ({1})
+    catch ({1} e)
     {{
         {2}
     }}
