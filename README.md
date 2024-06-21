@@ -37,6 +37,9 @@
 - Install [mc](https://midnight-commander.org/)
 - Copy mc config to `.config/mc`
 
+## Rest
+- Install [httpYac](https://httpyac.github.io/)
+
 ## Commands
 
 ### Logging run pane to lnav
