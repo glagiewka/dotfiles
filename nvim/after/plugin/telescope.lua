@@ -1,4 +1,7 @@
 require('telescope').setup{
+    defaults = {
+        -- layout_strategy = 'vertical',
+    },
     pickers = {
         git_files = {
             hidden = true
@@ -9,6 +12,7 @@ require('telescope').setup{
         },
 
         lsp_references = {
+            initial_mode = 'normal',
             show_line = false,
         },
 
@@ -18,4 +22,12 @@ require('telescope').setup{
             end
         },
     },
+    extensions = {
+        file_browser = {
+            grouped = true,
+            initial_mode = 'normal',
+            path = '%:p:h',
+            select_buffer = true
+        }
+    }
 }

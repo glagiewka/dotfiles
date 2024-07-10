@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- Telescope
@@ -17,6 +16,10 @@ end)
 
 vim.keymap.set('n', 'gr', function()
     require('telescope.builtin').lsp_references({})
+end)
+
+vim.keymap.set("n", "<leader>pv", function()
+    require("telescope").extensions.file_browser.file_browser()
 end)
 
 -- Vimspector
